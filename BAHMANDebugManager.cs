@@ -17,8 +17,9 @@ public class BAHMANDebugManager : MonoBehaviour
             _Instance = this;
 
             _debugText = GetComponentInChildren<Text>();
-
+            _debugText.enabled = _enableDebug;
             DontDestroyOnLoad(gameObject);
+
         }
         else
         {
